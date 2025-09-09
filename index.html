@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Responsive Webpage</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Responsive breakpoints */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🌍 My Responsive Web Page</h1>
+        <p>Works perfectly on Laptop, Mobile, and Tablet 📱💻</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://picsum.photos/400/250" alt="Sample Image 1">
+            <div class="card-content">
+                <h2>Beautiful Scenery</h2>
+                <p>This is a demo picture fetched from Picsum. Resize the screen to see how it adjusts responsively!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/401/250" alt="Sample Image 2">
+            <div class="card-content">
+                <h2>Nature at its Best</h2>
+                <p>Responsive design ensures this page looks great on laptops, tablets, and mobile devices.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 My Responsive Website | Designed with ❤️</p>
+    </footer>
+</body>
+
+</html>
